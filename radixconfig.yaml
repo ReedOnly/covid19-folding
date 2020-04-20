@@ -9,7 +9,7 @@ spec:
         from: master
 
   components:
-    - name: folding
+    - name: node1
       src: foldingathome
       ports:
         - name: http
@@ -17,7 +17,7 @@ spec:
       publicPort: http
       environmentConfig:
         - environment: dev
-          replicas: 2
+          replicas: 1
           variables:
             USER: 'Kristian_Reed'
             TEAM: '254927'
@@ -26,3 +26,22 @@ spec:
       secrets:
         - PASSWORD
         - PASSKEY
+        
+    - name: node2
+      src: foldingathome
+      ports:
+        - name: http
+          port: 7396
+      publicPort: http
+      environmentConfig:
+        - environment: dev
+          replicas: 1
+          variables:
+            USER: 'Kristian_Reed'
+            TEAM: '254927'
+            POWER: 'medium'
+            CAUSE: 'COVID_19'
+      secrets:
+        - PASSWORD
+        - PASSKEY
+        
