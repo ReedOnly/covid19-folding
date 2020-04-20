@@ -1,7 +1,7 @@
 apiVersion: radix.equinor.com/v1
 kind: RadixApplication
 metadata:
-  name: covid19-folding
+  name: covid-19-folding
 spec:
   environments:
     - name: dev
