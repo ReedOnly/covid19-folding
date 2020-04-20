@@ -23,7 +23,7 @@ spec:
               cpu: "1000m"
             limits:
               memory: "1000Mi"
-              cpu: "8000m"
+              cpu: "20000m"
           replicas: 1
           variables:
             USER: 'Kristian_Reed'
@@ -49,6 +49,27 @@ spec:
             limits:
               memory: "1000Mi"
               cpu: "1000m"
+          replicas: 5
+          variables:
+            USER: 'Kristian_Reed'
+            TEAM: '254927'
+            POWER: 'FULL'
+            CAUSE: 'COVID_19'
+    - name: node3
+      src: foldingathome
+      ports:
+        - name: http
+          port: 7396
+      publicPort: http
+      environmentConfig:
+        - environment: dev
+          resources:
+            requests:
+              memory: "500Mi"
+              cpu: "300m"
+            limits:
+              memory: "1000Mi"
+              cpu: "5000m"
           replicas: 5
           variables:
             USER: 'Kristian_Reed'
