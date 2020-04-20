@@ -17,7 +17,6 @@ spec:
       publicPort: http
       environmentConfig:
         - environment: dev
-        - replicas: 1
           variables:
             USER: 'Kristian_Reed'
             TEAM: '254927'
