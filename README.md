@@ -18,7 +18,7 @@ https://stats.foldingathome.org/team/254927
 
 
 ## Radix:
-https://console.playground.radix.equinor.com/applications/covid-19-folding
+- https://console.playground.radix.equinor.com/applications/covid-19-folding
 
-https://node1-covid-19-folding-dev.playground.radix.equinor.com/
-https://node2-covid-19-folding-dev.playground.radix.equinor.com/
+- https://node1-covid-19-folding-dev.playground.radix.equinor.com/
+- https://node2-covid-19-folding-dev.playground.radix.equinor.com/
