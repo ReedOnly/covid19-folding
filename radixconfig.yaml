@@ -23,7 +23,7 @@ spec:
               cpu: "300m"
             limits:
               memory: "12Gi"
-              cpu: "5000"
+              cpu: "5000m"
           replicas: 1
           variables:
             USER: 'Kristian_Reed'
