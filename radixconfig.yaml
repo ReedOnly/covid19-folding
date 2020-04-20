@@ -20,10 +20,10 @@ spec:
           resources:
             requests:
               memory: "500Mi"
-              cpu: "300m"
+              cpu: "1000m"
             limits:
-              memory: "5Gi"
-              cpu: "5000m"
+              memory: "1000Mi"
+              cpu: "8000m"
           replicas: 1
           variables:
             USER: 'Kristian_Reed'
@@ -47,9 +47,9 @@ spec:
               memory: "500Mi"
               cpu: "300m"
             limits:
-              memory: "5Gi"
-              cpu: "5000m"
-          replicas: 1
+              memory: "1000Mi"
+              cpu: "1000m"
+          replicas: 5
           variables:
             USER: 'Kristian_Reed'
             TEAM: '254927'
