@@ -13,7 +13,7 @@ spec:
       src: foldingathome
       ports:
         - name: http
-          port: 7396
+          port: 36330
       publicPort: http
       environmentConfig:
         - environment: dev
