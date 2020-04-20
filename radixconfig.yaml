@@ -19,16 +19,16 @@ spec:
         - environment: dev
           resources:
             requests:
-              memory: "2Gi"
+              memory: "500Mi"
               cpu: "300m"
             limits:
-              memory: "12Gi"
+              memory: "5Gi"
               cpu: "5000m"
           replicas: 1
           variables:
             USER: 'Kristian_Reed'
             TEAM: '254927'
-            POWER: 'medium'
+            POWER: 'FULL'
             CAUSE: 'COVID_19'
       secrets:
         - PASSWORD
@@ -44,11 +44,11 @@ spec:
         - environment: dev
           resources:
             requests:
-              memory: "2Gi"
+              memory: "500Mi"
               cpu: "300m"
             limits:
-              memory: "12Gi"
-              cpu: "1200m"
+              memory: "5Gi"
+              cpu: "5000m"
           replicas: 1
           variables:
             USER: 'Kristian_Reed'
