@@ -1,0 +1,15 @@
+version: "2"
+services:
+  foldingathome:
+    image: linuxserver/foldingathome
+    container_name: foldingathome
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Oslo
+    volumes:
+      - ./config.xml:/config/config.xml
+    ports:
+      - 8080:7396
+      - 36331:36330
+    restart: unless-stopped

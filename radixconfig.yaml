@@ -1,0 +1,28 @@
+apiVersion: radix.equinor.com/v1
+kind: RadixApplication
+metadata:
+  name: covid19-folding
+spec:
+  environments:
+    - name: dev
+      build:
+        from: master
+
+  components:
+    - name: folding
+      src: frontend
+      ports:
+        - name: http
+          port: 8080
+      publicPort: http
+      environmentConfig:
+        - environment: dev
+        - replicas: 1
+          variables:
+            USER: 'Kristian_Reed'
+            TEAM: '254927'
+            POWER: 'medium'
+            CAUSE: 'COVID_19'
+      secrets:
+        - PASSWORD
+        - PASSKEY

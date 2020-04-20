@@ -1,0 +1,15 @@
+version: "3"
+services:
+  foldingathome:
+    build: foldingathome
+    container_name: foldingathome
+    environment:
+      - USER=Kristian_Reed
+      - TEAM=254927
+      - POWER=medium
+      - CAUSE=COVID_19
+      - PASSWORD
+      - PASSKEY
+    ports:
+      - 8080:7396
+      - 36331:36330

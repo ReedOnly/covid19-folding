@@ -1,0 +1,29 @@
+<config>
+  <!-- Folding Slot Configuration -->
+  <cause v='COVID_19'/>
+  <!-- HTTP Server -->
+  <allow v='0.0.0.0/0'/>
+
+  <!-- Logging -->
+  <verbosity v='5'/>
+
+  <!-- Network -->
+  <proxy v=':8080'/>
+
+  <!-- Remote Command Server -->
+  <command-allow-no-pass v='0.0.0.0/0'/>
+  <command-port v='36331'/>
+
+  <!-- Slot Control -->
+  <power v='MEDIUM'/>
+
+  <!-- User Information -->
+  <team v='254927'/>
+  <user v='Kristian_Reed'/>
+
+  <!-- Folding Slots -->
+  <slot id='0' type='CPU'>
+    <idle v='false'/>
+    <paused v='false'/>
+  </slot>
+</config>

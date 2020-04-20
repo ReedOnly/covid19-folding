@@ -1,0 +1,9 @@
+FAHClient --web-allow=0/0:7396 \
+          --command-allow-no-pass=0/0:36330 \
+          --allow=0/0:36330 \
+          --user=$USER \
+          --team=$TEAM \
+          --power=$POWER \
+          --passkey=$PASSKEY \
+          --password=$PASSWORD \
+          --cause=$CAUSE
