@@ -10,7 +10,7 @@ spec:
 
   components:
     - name: folding
-      src: frontend
+      src: foldingathome
       ports:
         - name: http
           port: 8080
