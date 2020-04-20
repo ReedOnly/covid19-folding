@@ -46,7 +46,7 @@ spec:
           variables:
             USER: 'Kristian_Reed'
             TEAM: '254927'
-            POWER: 'medium'
+            POWER: 'FULL'
             CAUSE: 'COVID_19'
       secrets:
         - PASSWORD
