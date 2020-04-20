@@ -13,10 +13,17 @@ spec:
       src: foldingathome
       ports:
         - name: http
-          port: 36330
+          port: 7396
       publicPort: http
       environmentConfig:
         - environment: dev
+          resources:
+            requests:
+              memory: "2Gi"
+              cpu: "300m"
+            limits:
+              memory: "12Gi"
+              cpu: "5"
           replicas: 1
           variables:
             USER: 'Kristian_Reed'
