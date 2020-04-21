@@ -20,7 +20,7 @@ spec:
           resources:
             requests:
               memory: "500Mi"
-              cpu: "1000m"
+              cpu: "300m"
             limits:
               memory: "1000Mi"
               cpu: "30000m"
@@ -45,7 +45,7 @@ spec:
           resources:
             requests:
               memory: "500Mi"
-              cpu: "800m"
+              cpu: "300m"
             limits:
               memory: "1000Mi"
               cpu: "8000m"
@@ -68,11 +68,11 @@ spec:
           resources:
             requests:
               memory: "500Mi"
-              cpu: "800m"
+              cpu: "300m"
             limits:
               memory: "1000Mi"
               cpu: "8000m"
-          replicas: 10
+          replicas: 1
           variables:
             USER: 'Kristian_Reed'
             TEAM: '254927'
