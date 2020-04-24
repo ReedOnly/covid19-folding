@@ -55,8 +55,11 @@ spec:
             TEAM: '254927'
             POWER: 'FULL'
             CAUSE: 'COVID_19'
+      secrets:
+        - PASSWORD
+        - PASSKEY
             
-           
+     
     - name: node3
       src: foldingathome
       ports:
@@ -81,4 +84,53 @@ spec:
       secrets:
         - PASSWORD
         - PASSKEY
+
+    - name: node4
+      src: foldingathome
+      ports:
+        - name: http
+          port: 7396
+      publicPort: http
+      environmentConfig:
+        - environment: dev
+          resources:
+            requests:
+              memory: "500Mi"
+              cpu: "300m"
+            limits:
+              memory: "1000Mi"
+              cpu: "8000m"
+          replicas: 1
+          variables:
+            USER: 'Kristian_Reed'
+            TEAM: '254927'
+            POWER: 'FULL'
+            CAUSE: 'COVID_19'
+      secrets:
+        - PASSWORD
+        - PASSKEY
         
+    - name: node5
+      src: foldingathome
+      ports:
+        - name: http
+          port: 7396
+      publicPort: http
+      environmentConfig:
+        - environment: dev
+          resources:
+            requests:
+              memory: "500Mi"
+              cpu: "300m"
+            limits:
+              memory: "1000Mi"
+              cpu: "8000m"
+          replicas: 1
+          variables:
+            USER: 'Kristian_Reed'
+            TEAM: '254927'
+            POWER: 'FULL'
+            CAUSE: 'COVID_19'
+      secrets:
+        - PASSWORD
+        - PASSKEY
